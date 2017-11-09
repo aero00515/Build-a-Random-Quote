@@ -1,0 +1,95 @@
+@import url(http://fonts.googleapis.com/css?family=Raleway:400,500);
+
+* {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	box-sizing: border-box;
+}
+
+div {
+	position: relative;
+	z-index: 2;
+}
+
+body {
+	background-color: #333;
+	color:#333;
+	font-family: 'Raleway',sans-serif;
+	font-weight: 400;
+	
+}
+.footer {
+	width:450px;
+	text-align: center;
+	display:block;
+	margin : 0 auto;
+	font-size: 0.8em;
+	color:#fff;
+
+	a {
+		font-weight: 500;
+		text-decoration: none;
+		color:#fff;
+	}
+}
+.quote-box {
+	position: relative;
+	border-radius: 3px;
+	width: 537px;
+	margin: 70px auto 20px auto;
+	background-color: #fff;
+	padding: 60px 60px;
+
+	.quote-text {
+		i {
+			font-size:1.0em;
+			margin-right:3px;
+		}
+		text-align: center;
+		height:auto;
+		font-weight: 500;
+		font-size: 1.5em;
+	}
+
+	.quote-author {
+		padding-top: 17px;
+		text-align: right;
+		font-size: 1em;
+		height:auto;
+	}
+	.buttons {
+	 	
+	    margin-top:30px;
+	    display:block;
+	    .button {
+	      height:38px;
+	      border:none;
+	      border-radius:3px;
+	      color:#fff;
+	      background-color:#333;
+	      outline:none;
+	      font-size:0.85em;
+	      padding: 8px 18px 6px 18px;
+	      
+	      opacity:1;
+	      cursor:pointer;
+	      &:hover {
+	        opacity:0.9;
+	      }
+	      &#tweet-quote, &#tumblr-quote {
+	        float:left;
+	        padding:0px;
+	        padding-top:8px;
+	        text-align:center;
+	        font-size:1.2em;
+	        margin-right:5px;
+	        height:38px;
+	        width:40px;
+	      }
+	      &#new-quote {
+	        float:right;
+	      }
+	    }
+	}
+}
