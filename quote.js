@@ -21,7 +21,7 @@ function getData(cb) {
 	});
 } 
 
-getData((err, data) => {
+function quoteCallback(err, data) {
 	
 	showQuote = data.quote;
 	showAuthor = data.author;
@@ -38,17 +38,19 @@ getData((err, data) => {
 
 	$(".quote-author").animate({
 		  opacity: 0
-		}, 500,
+		}, 300,
 		function() {
 		  $(this).animate({
 		    opacity: 1
-		  }, 500);
+		  }, 300);
 		  $('#author').text(showAuthor);
 	});
 
-});
+};
 
 $(document).ready(function() {
-	
-	$("#new-quote").on('click', getData);
+	getData(quoteCallback);
+$("#new-quote").on('click', (v) => {
+    getData(quoteCallback);
+});
 });
